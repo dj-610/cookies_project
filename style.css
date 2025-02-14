@@ -1,0 +1,636 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  margin: 0;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+button {
+  transition: 0.3s;
+}
+.container {
+  margin-top: 0px;
+  height: 800px;
+  background-image: url(./Images/image_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: bottom;
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+.wrap {
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  overflow: hidden;
+}
+.navBar {
+  height: 100px;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  vertical-align: bottom;
+  justify-content: space-between;
+  padding: 30px 0 0 100px;
+}
+.navBar #extend{
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+.navBar ul {
+  margin-right: 100px;
+  display: flex;
+  list-style-type: none;
+}
+.introText {
+  margin: auto;
+  margin-top: 120px;
+  width: 100%;
+  max-width: 800px;
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.introText p {
+  font-size: 54px;
+  font-weight: lighter;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.navBar ul li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 15px;
+}
+.navBar ul li a:hover{
+    transition: 0.3s;
+    color: #89898a;
+}
+.navbar-extend{
+display: none ;
+position: absolute;
+top: 0;
+background-color: white;
+left: 0;
+right: 0;
+}
+.open-navbar{
+  display: block !important;
+}
+.navbar-extend ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.navbar-extend ul li{
+  margin: 10px 0;
+}
+.navbar-extend ul li a{
+  color: rgba(0, 0, 0, 0.589);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.introButtonGet {
+  cursor: pointer;
+  height: 65px;
+  margin-right: 10px;
+  width: 190px;
+  font-size: 16px;
+  background-color: #1a57a5;
+  border: 2px solid #1a57a5;
+  color: white;
+  border-radius: 2px;
+}
+.introButtonGet:hover {
+  background-color: #253e5f;
+  border: 2px solid #2a4972;
+  border-style: none;
+}
+.introButtonFeatures {
+  cursor: pointer;
+  height: 65px;
+  margin-right: 10px;
+  width: 190px;
+  font-size: 16px;
+  color: white;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+.introButtonFeatures:hover {
+  background-color: #979a9cb7;
+}
+.bodySection {
+  display: flex;
+  text-align: center;
+  padding-left: 70px;
+}
+.bodySectionItems {
+  width: 300px;
+  background-color: transparent;
+  color: #1a57a5;
+  text-align: left;
+  padding-left: 80px;
+  margin-bottom: 30px;
+}
+.bodySectionItems h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.bodySectionItemsIcons i {
+  float: left;
+  font-size: 80px;
+}
+.bodySectionItems p {
+  padding: 10px 0;
+  font-size: 17px;
+  word-spacing: 1px;
+  color: #73767c;
+}
+.bodySectionItems a {
+  text-decoration: none;
+  color: #1a57a5;
+  font-size: 15px;
+}
+.bodySectionItemsIcons {
+  margin-bottom: 70px;
+}
+.featuresSection {
+  background-color: #d6e6f2;
+  padding-bottom: 90px;
+  width: 100%;
+}
+/* Features Section Header */
+.featuresSectionHeader {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.featuresSection h1 {
+  font-size: 50px;
+  padding-top: 100px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: black;
+}
+.featuresSectiondescription {
+  width: 780px;
+  font-size: 16px;
+  word-spacing: 1px;
+  color: #73767c;
+  margin-bottom: 90px;
+  text-align: center;
+}
+/* Features Section Second */
+.feacturesSectionSecond {
+  display: flex;
+  padding-bottom: 100px;
+}
+.feacturesSectionSecondText {
+  margin-left: 100px;
+}
+#feacturesSectionSecondText-p{
+  width: 390px;
+}
+.feacturesSectionSecondText h3 {
+  color: #1a57a5;
+  font-size: 36px;
+  width: 500px;
+  font-weight: 500;
+}
+.feacturesSectionSecondText p {
+  font-size: 17px;
+  word-spacing: 1px;
+  color: #73767c;
+}
+.feacturesSectionSecondText i {
+  padding-right: 10px;
+}
+.featureSectionSecondImage img {
+  margin-right: 20px;
+  height: 450px;
+  width: 680px;
+  box-shadow: 2px 2px 50px 2px rgba(161, 161, 161, 0.473);
+}
+/* Features Section Third */
+.featuresSectionThird {
+  display: flex;
+  padding-bottom: 100px;
+}
+.featuresSectionThirdImage img {
+  margin-left: 100px;
+  height: 500px;
+  width: 750px;
+  box-shadow: -2px 2px 50px 2px rgba(161, 161, 161, 0.473);
+}
+.featuresSectionThirdText h3 {
+  margin-left: 100px;
+  color: #1a57a5;
+  font-size: 36px;
+  width: 300px;
+  font-weight: 500;
+}
+.featuresSectionThirdText p {
+  padding-left: 100px;
+  font-size: 17px;
+  word-spacing: 1px;
+  color: #73767c;
+}
+.featuresSectionThirdText i {
+  padding-right: 10px;
+}
+/* Features Section Fourth */
+.featuresSectionFourth {
+  display: flex;
+  padding-bottom: 100px;
+}
+.featuresSectionFourthText {
+  margin-left: 100px;
+}
+.featuresSectionFourthImage img {
+  margin-right: 20px;
+  height: 450px;
+  width: 680px;
+  box-shadow: 2px 2px 50px 2px rgba(161, 161, 161, 0.473);
+}
+.featuresSectionFourthText h3 {
+  color: #1a57a5;
+  font-size: 36px;
+  width: 500px;
+  font-weight: 500;
+}
+.featuresSectionFourthText p {
+  font-size: 17px;
+  word-spacing: 1px;
+  color: #73767c;
+}
+.featuresSectionFourthText i {
+  padding-right: 10px;
+}
+/* Plans Section  */
+/* Plans Section Header */
+.plansSection {
+  background-color: white;
+  padding-bottom: 90px;
+}
+.plansSectionHeader {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.plansSectionHeader h1 {
+  font-size: 50px;
+  padding-top: 100px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: black;
+  width: 700px;
+}
+.plansSectiondescription {
+  width: 780px;
+  font-size: 16px;
+  word-spacing: 1px;
+  color: #73767c;
+  margin-bottom: 90px;
+  text-align: center;
+}
+/* Plans Section Items */
+.plansSectionItems {
+  display: flex;
+  justify-content: center;
+}
+.plansSectionItem {
+  border-radius: 2px;
+  width: 350px;
+  height: 600px;
+  margin: 20px;
+  border: 1px solid rgb(211, 211, 211);
+}
+.plansSectionItem h3 {
+  letter-spacing: 2px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 14px;
+}
+.plansSectionItem h1 {
+  color: #1a57a5;
+  font-size: 62px;
+  font-weight: 500;
+  text-align: center;
+}
+.plansSectionItem p {
+  padding-left: 30px;
+  font-size: 17px;
+  word-spacing: 1px;
+  color: #73767c;
+}
+.plansSectionItem i {
+  padding-right: 10px;
+}
+.plansSectionItemButton {
+  margin: 50px 100px;
+  height: 45px;
+  margin-right: 10px;
+  width: 150px;
+  font-size: 16px;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+.plansSectionItemButton:hover {
+  background-color: rgb(43, 42, 42);
+  border-style: none;
+  cursor: pointer;
+}
+.plansSectionItemButtonBlue {
+  margin: 50px 100px;
+  height: 45px;
+  margin-right: 10px;
+  width: 150px;
+  font-size: 16px;
+  color: white;
+  background-color: #1a57a5;
+  border: 1px solid #1a57a5;
+  transition: 0.5s;
+}
+.plansSectionItemButtonBlue:hover {
+  cursor: pointer;
+  background-color: #253e5f;
+  border-style: none;
+}
+/* Features Section */
+.reviewsSection {
+  background-color: #d6e6f2;
+  padding-bottom: 70px;
+}
+.reviewsSectionHeader {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.reviewsSectionHeader h1 {
+  font-size: 50px;
+  padding-top: 100px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: black;
+  width: 800px;
+}
+.reviewsSectiondescription {
+  width: 780px;
+  font-size: 16px;
+  word-spacing: 1px;
+  color: #73767c;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.reviewsCards {
+  display: flex;
+  justify-content: center;
+  margin: 20px 40px 20px 100px;
+}
+.reviewCard {
+  background-color: white;
+  border-radius: 3px;
+  width: 320px;
+  height: 380px;
+  margin: 15px;
+  padding: 30px;
+}
+.cardImage img {
+  margin-bottom: 30px;
+  height: 70px;
+  border-radius: 50%;
+}
+.cardImage i {
+  padding-left: 20px;
+}
+.cardDescription p {
+  margin: 30px 0px 0px 0px;
+  width: 300px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  color: black;
+}
+/* Get It Now Section */
+.getItNowSection {
+  background-color: white;
+  padding-bottom: 70px;
+}
+.getItNowSectionHeader {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.getItNowSectionHeader h1 {
+  font-size: 50px;
+  padding-top: 100px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: black;
+  width: 800px;
+}
+.getItNowSectiondescription {
+  width: 780px;
+  font-size: 16px;
+  word-spacing: 1px;
+  color: #73767c;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.getItNowSectiondescription button {
+  margin: 50px 40px;
+  height: 45px;
+  margin-right: 10px;
+  width: 150px;
+  font-size: 16px;
+  background-color: #1a57a5;
+  border: 2px solid #1a57a5;
+  color: white;
+}
+.getItNowSectiondescription button:hover {
+  background-color: rgb(43, 42, 42);
+  border-style: none;
+  cursor: pointer;
+}
+.getItNowSection img {
+  height: 700px;
+  width: 1150px;
+  padding-left: 110px;
+}
+.getItNowTextSection {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  width: 1200px;
+  line-height: 30px;
+}
+.getItNowSectionOne {
+  margin-right: 80px;
+}
+.getItNowSectionOne h4 {
+  font-size: 18px;
+  color: black;
+}
+.getItNowSection p {
+  font-size: 16px;
+  word-spacing: 1px;
+  color: #73767c;
+  margin-bottom: 50px;
+}
+.getItNowSectionTwo {
+  margin-right: 80px;
+}
+.getItNowSectionTwo h4 {
+  font-size: 18px;
+  color: black;
+}
+.joinUs {
+  padding-top: 50px;
+  background-color: #1a57a5;
+  color: white;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+}
+.joinUs h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.joinUs p {
+  line-height: 30px;
+  text-align: center;
+  width: 750px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.joinUsSectionButton {
+  margin: auto;
+  height: 45px;
+  width: 170px;
+  font-size: 16px;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.joinUsSectionButton:hover {
+  background-color: rgb(43, 42, 42);
+  border-style: none;
+  cursor: pointer;
+}
+.commentSection {
+  display: flex;
+  background-color: #d6e6f2;
+  padding: 20px;
+}
+.commentForm {
+  background-color: white;
+  height: 600px;
+  width: 470px;
+  margin: 100px 80px;
+  padding: 40px;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.15);
+}
+.commentForm h1 {
+  font-size: 30px;
+  margin: 0 0 30px 0;
+  font-weight: 500;
+  color: black;
+}
+.commentForm input {
+  border: 1px solid #55555549;
+  color: #5555556b;
+  width: 430px;
+  height: 30px;
+  padding: 6px 12px;
+  margin: 10px 0;
+  resize: vertical;
+}
+.commentForm textarea {
+  padding: 6px 12px;
+  margin: 10px 0;
+  width: 430px;
+  height: 230px;
+}
+.commentForm button {
+  margin: 20px 0;
+  height: 45px;
+  margin-right: 10px;
+  width: 200px;
+  font-size: 16px;
+  color: white;
+  background-color: #1a57a5;
+  border: 1px solid #1a57a5;
+  transition: 0.5s;
+}
+.commentText {
+  margin: 100px 0 0 40px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.commentText h2 {
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.commentText p {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer {
+  padding-top: 50px;
+  background-color: #1a57a5;
+  color: white;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.footerIcons{
+    display: flex;
+    justify-content: center;
+}
+.footerIcons i{
+    opacity: 0.3;
+    padding-left: 30px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.footerIcons i:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 1;
+}
+.footer p {
+    margin: auto;
+    margin: 3px;
+    text-align: center;
+    width: 750px;
+    font-size: 16px;
+    color: white;
+  }
+  .footer p a{
+    color: rgba(255, 255, 255, .4);
+    transition: 0.3s;
+  }
+  .footer p a:hover{
+    cursor: pointer;
+    color: white;
+  }

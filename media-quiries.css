@@ -1,0 +1,393 @@
+/* Mobile (up to 600px) */
+@media only screen and (max-width: 769px) {
+    body {
+        transition: 0.6s;
+    }
+
+    .container {
+        width: 100%;
+        height: 620px;
+        margin-bottom: 100px;
+    }
+
+    .navBar {
+        background-color: white;
+        height: 50px;
+        color: black;
+        padding: 0 10px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .navBar ul {
+        margin: 0;
+        padding: 4px 15px 20px 0;
+        display: none;
+    }
+
+    .navBar #extend {
+        display: block;
+    }
+
+    .navBar ul li a {
+        color: rgb(105, 105, 105);
+    }
+
+    .navBar h1 {
+        color: #1A57A5;
+        font-size: 26px;
+    }
+
+    .introText {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        margin-top: 100px;
+    }
+
+    .introText p {
+        font-size: 36px;
+        width: 700px;
+    }
+
+    .bodySection {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .bodySectionItems {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
+    .featuresSection {
+        align-items: center;
+    }
+
+    .featuresSectionHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .featuresSection h1 {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    .featuresSectiondescription {
+        width: auto;
+        padding: 10px;
+    }
+
+    .feacturesSectionSecond {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feacturesSectionSecondText {
+        margin-left: 15px;
+    }
+
+    .feacturesSectionSecondText h3 {
+        font-size: 24px;
+    }
+
+    #feacturesSectionSecondText-p {
+        width: auto;
+        font-size: medium;
+        margin-top: 30px;
+    }
+
+    .featureSectionSecondImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .featureSectionSecondImage img {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .featuresSectionThird {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .featuresSectionThirdImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .featuresSectionThirdImage img {
+        height: 450px;
+        width: 680px;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .featuresSectionThirdText {
+        margin-left: 15px;
+    }
+
+    .featuresSectionThirdText h3 {
+        font-size: 24px;
+        margin: 10px;
+        margin-top: 30px;
+    }
+
+    .featuresSectionThirdText p {
+        padding: 0;
+    }
+
+    .featuresSectionFourth {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featuresSectionFourthText {
+        margin-left: 15px;
+    }
+
+    .featuresSectionFourthText h3 {
+        font-size: 24px;
+    }
+
+    .featuresSectionFourthImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .featuresSectionFourthImage img {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .plansSectionHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plansSectionHeader h1 {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .plansSectiondescription {
+    width: 100%;
+    }
+    .plansSectiondescription p{
+        margin: 8px;
+    }
+    .plansSectionItem {
+        width: 95%;
+        text-align: center;
+      }
+      .plansSectionItem h3 {
+        margin-bottom: 5px;
+    }
+      .plansSectionItem h1 {
+        font-size: 42px;
+        margin: 0;
+        margin-bottom: 35px;
+    }
+    .plansSectionItem p {
+        text-align: left;
+      }
+      .plansSectionItemButton {
+        margin: 50px 0;
+      }
+      .plansSectionItemButtonBlue {
+      margin: 50px 0;
+      }
+      .reviewsSectionHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .reviewsSectionHeader h1 {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .reviewsSectiondescription {
+    width: 100%;
+    }
+    .reviewsSectiondescription p{
+        margin: 8px;
+    }
+    .reviewsCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      .reviewCard{
+        width: 86%;
+        height: auto;
+      }
+      .cardDescription p {
+        width: 100%;
+      }
+      .getItNowSectionHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .getItNowSectionHeader h1 {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .getItNowSectionHeader p{
+        margin-bottom: 20px;
+    }
+    .getItNowSectiondescription {
+    width: 100%;
+    }
+    .getItNowSectiondescription p{
+        margin: 8px;
+    }
+    .getItNowSectiondescription button {
+        margin: 22px;
+        margin-bottom: 50px;
+    }
+    .getItNowSection img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+      }
+      .getItNowTextSection{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+      }
+      .getItNowTextSection p{
+        width: 100%;
+        margin: 0;
+      }
+      .getItNowSectionOne, .getItNowSectionTwo{
+        margin: 0;
+      }
+      .joinUs{
+        padding: 3em;
+      }
+      .joinUs p {
+        width: 100%;
+      }
+      .commentSection{
+        display: flex;
+        flex-direction: column;
+      }
+      .commentForm{
+        width: 96% ;
+        margin: 40px 0;
+        padding: 15px;
+      }
+      .commentForm input {
+        width: 95%;
+      }
+      .commentForm textarea{
+        width: 95%;
+      }
+      .commentText{
+        font-size: 16px ;
+        margin: 0;
+      }
+      .commentText h2 {
+        font-size: 16px;
+      }
+
+}
+@media only screen and (min-width: 769px) {
+        #navbar{
+            display: none !important;
+          }
+}
+
+/* Tablet (600px to 768px) */
+@media only screen and (max-width: 480px) {
+    .bodySectionItems {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container{
+        height: 100%;
+    }
+    .introText{
+        margin-top: 140px;
+        width: 100%;
+    }
+    .introText p{
+        width: 80%;
+    }
+    .introButtons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .introButtons button{
+        width: 95%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .featureSectionSecondImage img {
+        width: 95%;
+        height: 100%;
+    }
+    .featuresSectionThirdImage img {
+        width: 95%;
+        height: 100%;
+    }
+    .featuresSectionFourthImage img{
+        width: 95%;
+        height: 100%;
+    }
+    .plansSectionHeader{
+        width: 100%;
+    }
+    .plansSectionHeader h1{
+        width: 100%;
+    }
+    .plansSectionItems {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviewsSectionHeader{
+        width: 100%;
+    }
+    .reviewsSectionHeader h1{
+        width: 100%;
+    }
+    .reviewCard{
+        width: 80%;
+    }
+    .getItNowSectionImage{
+        width: 100%;
+        text-align: center;
+    }
+    .getItNowSection img{
+        width: 90%;
+        height: 100%;
+    }
+    .joinUs{
+        padding: 42px 10px;
+    }
+    .joinUs h2 p{
+        width: 100%;
+    }
+}
